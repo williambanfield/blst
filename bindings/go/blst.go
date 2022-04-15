@@ -10,7 +10,7 @@
 
 package blst
 
-// #cgo CFLAGS: -I${SRCDIR}/.. -I${SRCDIR}/../../build -I${SRCDIR}/../../src -D__BLST_CGO__ -fno-builtin-memcpy -fno-builtin-memset
+// #cgo CFLAGS: -I${SRCDIR}/.. -I${SRCDIR}/../../build -I${SRCDIR}/../../src -D__BLST_CGO__ -fno-builtin-memcpy -fno-builtin-memset -O -D__BLST_PORTABLE__
 // #cgo amd64 CFLAGS: -D__ADX__ -mno-avx
 // #cgo mips64 mips64le ppc64 ppc64le riscv64 s390x CFLAGS: -D__BLST_NO_ASM__
 // #include "blst.h"
